@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/DatabaseTest">
+
+	<!-- 
+	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="50" 
+		maxIdle="20" maxWait="10000" name="jdbc/gamingtest" password="Gob!nda$" removeAbandoned="true" 
+		removeAbandonedTimeout="60" logAbandoned="true" type="javax.sql.DataSource" 
+		url="jdbc:mysql://103.54.108.4:3306/gamingtest?autoreconnect=true" username="root" />
+	 -->	
+<!-- <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="50" 
+		maxIdle="20" maxWait="10000" name="jdbc/testgaming" password="mysqladmin" removeAbandoned="true" 
+		removeAbandonedTimeout="60" logAbandoned="true" type="javax.sql.DataSource" 
+		url="jdbc:mysql://192.168.0.20:3306/testgaming?autoreconnect=true" username="root" />
+  driverClassName="oracle.jdbc.OracleDriver"
+ -->		
+	 <Resource 
+	 name="jdbc/myoracle"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@127.0.0.1:1521:XE"
+        username="system"
+        password="1234"
+        connectionProperties="SetBigStringTryClob=true"
+		accessToUnderlyingConnectionAllowed="true"
+        maxTotal="60"
+        maxIdle="20"
+        maxWaitMillis="10000"
+	/>
+	 <!-- removeAbandoned="true" 
+	 removeAbandonedTimeout="60" 
+	 logAbandoned="true" 
+	 -->	 
+
+	 
+	 
+	<!-- 	 <property name="driverClassName" value="com.mysql.jdbc.Driver" />	
+		
+			<property name="url" value="jdbc:mysql://192.168.0.20:3306/gaming?autoreconnect=true"/>
+			<property name="username" value="root" /> 
+			<property name="password" value="mysqladmin"/>  -->
+		 				
+		 				
+	
+</Context>
